@@ -1,0 +1,90 @@
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .about-content{
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+        h2{
+            margin-bottom: 30px;
+            font-size: 40px;
+            &:after{
+                content: '';
+                display: block;
+                width: 25%;
+                height: 1px;
+                margin-top: 10px;
+                background-color: #EEE;
+            }
+        }
+        p{
+            color: #6c6c6c;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+    .header-follow{
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    .why-about{
+        @media (max-width: 767px) {
+            &:after{
+                display: none;
+            }
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            top: 40px;
+            right: 0;
+            width: 60%;
+            border-bottom: 2px dashed #FEEBE7;
+            z-index: -1;
+        }
+        &.why-left,
+        &.why-right {
+            &:after{
+                left: 0;
+            }
+        }
+        &.why-left{
+            @media (max-width: 767px) {
+                &:before{
+                    display: none;
+                }
+            }
+            &:before{
+                content: '';
+                position: absolute;
+                top: 40px;
+                right: 0;
+                width: 60%;
+                border-bottom: 2px dashed #FEEBE7;
+                z-index: -1;
+            }
+        }
+        div{
+            .image-why{
+                width: 80px;
+                height: 80px;
+                background-color: #FEEBE7;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px !important;
+                img{
+                    width: 50%;
+                }
+            }
+            h4{
+                font-size: 18px;
+            }
+            p{
+                color: #6c6c6c;
+                font-size: 14px;
+            }
+        }
+    }
+}

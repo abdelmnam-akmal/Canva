@@ -1,0 +1,17 @@
+.button-scroll-up{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: $flatColor1;
+    color: $flatFFF;
+    transition: $transition;
+    padding: 8px 10px;
+    border-radius: 5px;
+    z-index: 999999999;
+    display: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #000;
+        color: $flatColor1;
+    }
+}

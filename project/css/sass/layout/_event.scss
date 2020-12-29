@@ -1,0 +1,39 @@
+.event{
+    background: url('../images/event1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    .event-info{
+        div{
+            span{
+                color: $flatColor1;
+                letter-spacing: 3px;
+                font-size: 10px;
+            }
+            h2{
+                font-size: 40px;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                color: $flatFFF;
+            }
+            p{
+                opacity: .7;
+                font-size: 15px;
+                margin-bottom: 30px;
+                color: $flatFFF;
+            }
+            .btn-header{
+                background-color: $flatColor1;
+                color: $flatFFF;
+                border-radius: 0;
+                font-size: 11px;
+                padding: 12px 25px;
+                transition: $transition;
+                &:hover{
+                    background-color: transparent;
+                    border: 1px solid $flatColor1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.navbar{
+    background-color: transparent !important;
+    color: #FFF !important;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(64, 64, 64, .5);
+    transition: $transition;
+    @media (max-width: 767px) {
+        background-color: $flatFFF;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    &.navbar-special{
+        background-color: #FFF !important;
+        border: none;
+        color: #000;
+        .navbar-brand{
+            color: #000;
+            &:hover{
+                color: #000;
+            }
+        }
+        .nav-item{
+            .nav-link{
+                color: #000 !important;
+                &.active{
+                    color: $flatColor1 !important;
+                }
+                &:hover{
+                    color: $flatColor1 !important;
+                }
+            }
+        }
+        .icons-navbar{
+            color: #000 !important;
+        }
+    }
+    .navbar-brand{
+        color: $flatFFF;
+        font-family: $redrFont;
+        font-size: 30px;
+        position: relative;
+        &:before{
+            content: '';
+            background-color: #E7B053;
+            position: absolute;
+            top: 22px;
+            left: 24px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        &:hover{
+            color: $flatFFF;
+        }
+    }
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $flatFFF;
+                transition: $transition;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: 12px;
+                &.active{
+                    color: $flatColor1 !important;
+                }
+                &:hover{
+                    color: $flatColor1;
+                }
+            }
+        }
+    }
+    .icons-navbar{
+        margin: 0;
+        li{
+            padding: 15px 10px;
+            position: relative;
+            i{
+                font-size: 22px;
+                cursor: pointer;
+                transition: $transition;
+                &:hover{
+                    color: $flatColor1;
+                }
+            }
+            &:last-of-type{
+                &:before{
+                    content: '0';
+                    font-size: 14px;
+                    background-color: $flatColor1;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 3px;
+                    right: 0;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 19px;
+                }
+            }
+            &:nth-last-of-type(2){
+                &:before{
+                    content: '0';
+                    font-size: 14px;
+                    background-color: $flatColor1;
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    top: 3px;
+                    right: 0;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
